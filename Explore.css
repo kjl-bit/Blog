@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #007bff;
+  text-align: center;
+}
+
+.blog {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog h2 {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.blog h2 .like-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #4caf50;
+  display: none;
+}
+
+.blog p {
+  margin: 10px 0;
+  color: #555;
+  text-align: left;
+}
+
+.blog a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog a:hover {
+  text-decoration: underline;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Added to ensure padding is included in width */
+  resize: vertical; /* Allows the textarea to be resized vertically */
+}
+
+.comment-btn, .like-btn, .save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-btn:hover, .like-btn:hover, .save-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+}
+
+.save-btn:active {
+  background-color: #388e3c;
+}
+
+.comments {
+  margin-top: 15px;
+}
+
+.comments p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.like-msg {
+  color: #f00;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.back-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 15px;
+  }
+
+  .blog {
+    max-width: 90%;
+  }
+
+  .back-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .blog h2 {
+    font-size: 1.2em;
+  }
+
+  .comment-btn, .like-btn, .save-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .comment-section textarea {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .blog {
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .back-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .blog h2 {
+    font-size: 1.1em;
+  }
+
+  .comment-btn, .like-btn, .save-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .comment-section textarea {
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .blog {
+    padding: 10px;
+  }
+
+  .blog h2 {
+    font-size: 1em;
+  }
+
+  .back-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .comment-btn, .like-btn, .save-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .comment-section textarea {
+    padding: 5px;
+  }
+}
+
+/* Added styles to fix comment box overflow */
+.comment-section {
+  margin-top: 20px;
+  overflow: hidden; /* Prevents the comment box from overflowing */
+}
+
+.comment-section textarea {
+  width: 100%; /* Ensures textarea takes full width of its container */
+  padding: 10px; /* Adjust padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Includes padding in width */
+  resize: vertical; /* Allows resizing vertically */
+}
+
+/* Responsive Styles for the comment box */
+@media screen and (max-width: 1200px) {
+  .comment-section textarea {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comment-section textarea {
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comment-section textarea {
+    padding: 5px;
+  }
+}

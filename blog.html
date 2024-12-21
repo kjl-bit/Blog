@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header class="container">
+        <h2>Create Blog</h2>
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a>        
+    </header>
+
+    <main class="editor-container">
+        <section class="editor">
+            <label for="blog-content" class="visually-hidden">Blog Content</label>
+            <textarea id="blog-content" class="content" placeholder="Start writing your blog..."></textarea>
+        </section>
+
+        <div class="toolbar">
+            <button class="btn save-btn">Save</button> 
+            <button class="btn upload-btn"> All Delete</button>
+        </div>
+
+        <section class="blog-list-container">
+            <h3>Blogs</h3>
+            <ul id="blog-list"></ul>
+        </section>
+
+        <section class="blog-title-container">
+            <h3>Generated Titles</h3>
+            <ul id="blog-title-list"></ul>  <!-- This list will show the generated titles -->
+        </section>
+    </main>
+
+    <script type="module" src="blog.js"></script>
+</body>
+</html>

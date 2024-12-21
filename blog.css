@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #007BFF;
+    text-align: center;
+    padding: 15px 10px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.editor-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    resize: none;
+    outline: none;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.content {
+    height: 250px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #118617;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0b5b12;
+    transform: scale(1.05);
+}
+
+.upload-btn {
+    background-color: #d30c0c;
+}
+
+.upload-btn:hover {
+    background-color: #a30a0a;
+}
+
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    .editor-container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+.blog-list-container {
+    margin-top: 30px;
+}
+
+.blog-list-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+#blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+#blog-list li {
+    background: #f4f4f4;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog-list .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #007BFF;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #d30c0c;
+}
+
+.delete-btn:hover {
+    background-color: #740808;
+}
+.back-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Set the size of the button */
+    height: 40px; 
+    background-color: #00bcd4; /* Button background */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 20px; /* Icon size */
+    position: fixed; /* Stick to a corner */
+    top: 20px; /* Position it from the top */
+    left: 20px; /* Position it from the left */
+    z-index: 1000; /* Make sure it's above other elements */
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0097a7; /* Change color on hover */
+}

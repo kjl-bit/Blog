@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Blogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Explore.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <a href="index.html" class="back-btn" aria-label="Back to Home">
+    <i class="fas fa-arrow-left"></i>
+  </a>  
+
+  <div class="container">
+    <h1>Explore Blogs</h1>
+
+    <!-- Blog Post 1 -->
+    <div class="blog" data-blog-id="1">
+      <h2>
+        Is It Selfish to Set Limits with Loved Ones? Understanding the Value of Boundaries for Personal Well-being
+        <span class="like-icon">❤️</span>
+      </h2>
+      <p>When it comes to the people closest to us—family, friends, or partners—the notion of setting boundaries can feel unsettling or even inconsiderate.</p>
+      <a href="https://backtales.edublogs.org/2024/10/22/is-it-selfish-to-set-limits-with-loved-ones-understanding-the-value-of-boundaries-for-personal-well-being/" target="_blank">Read more</a>
+
+      <div class="comment-section">
+        <textarea placeholder="Add a comment..."></textarea>
+        <button class="comment-btn" onclick="addComment(this)">Comment</button>
+        <button class="like-btn" onclick="likePost(this)">Like (<span>0</span>)</button>
+        <p class="like-msg" style="display: none;">You already liked this blog.</p>
+        <div class="comments"></div>
+      </div>
+    </div>
+
+    <!-- Blog Post 2 -->
+    <div class="blog" data-blog-id="2">
+      <h2>
+        Voices of Injustice: A Call for Women’s Freedom and Safety in India
+        <span class="like-icon">❤️</span>
+      </h2>
+      <p>This cycle of injustice against women seems never-ending. On a day when our country celebrates Independence Day, we must ask: where is the independence for women in this country?</p>
+      <a href="https://backtales.edublogs.org/2024/08/16/voices-of-injustice-a-call-for-womens-freedom-and-safety-in-india/" target="_blank">Read more</a>
+
+      <div class="comment-section">
+        <textarea placeholder="Add a comment..."></textarea>
+        <button class="comment-btn" onclick="addComment(this)">Comment</button>
+        <button class="like-btn" onclick="likePost(this)">Like (<span>0</span>)</button>
+        <p class="like-msg" style="display: none;">You already liked this blog.</p>
+        <div class="comments"></div>
+      </div>
+    </div>
+
+    <!-- Blog Post 3 -->
+    <div class="blog" data-blog-id="3">
+      <h2>
+        Unmasking India’s Male-Dominated Society
+        <span class="like-icon">❤️</span>
+      </h2>
+      <p>I’m back with a fresh topic to elaborate for you. So today we’ll be practicing and engaging with a topic to debate.</p>
+      <a href="https://backtales.edublogs.org/2024/02/15/unmasking-indias-male-dominated-society/" target="_blank">Read more</a>
+
+      <div class="comment-section">
+        <textarea placeholder="Add a comment..."></textarea>
+        <button class="comment-btn" onclick="addComment(this)">Comment</button>
+        <button class="like-btn" onclick="likePost(this)">Like (<span>0</span>)</button>
+        <p class="like-msg" style="display: none;">You already liked this blog.</p>
+        <div class="comments"></div>
+      </div>
+    </div>
+
+    <!-- Blog Post 4 -->
+    <div class="blog" data-blog-id="4">
+      <h2>
+        Friendship Beginnings: The First Episode of FRIENDS Unpacked!
+        <span class="like-icon">❤️</span>
+      </h2>
+      <p>Laugh, Love, and Life in NYC (New York City). “Friends” is a funny show for teens and adults. Join six pals in their 20s and 30s as they tackle relationships, jobs, and city life.</p>
+      <a href="https://backtales.edublogs.org/2024/01/18/friendship-beginnings-the-first-episode-of-friends-unpacked/" target="_blank">Read more</a>
+
+      <div class="comment-section">
+        <textarea placeholder="Add a comment..."></textarea>
+        <button class="comment-btn" onclick="addComment(this)">Comment</button>
+        <button class="like-btn" onclick="likePost(this)">Like (<span>0</span>)</button>
+        <p class="like-msg" style="display: none;">You already liked this blog.</p>
+        <div class="comments"></div>
+      </div>
+    </div>
+  </div>    
+
+  <script src="Explore.js"></script>
+</body>
+</html>
