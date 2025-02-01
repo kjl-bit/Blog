@@ -63,8 +63,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  box-sizing: border-box; /* Added to ensure padding is included in width */
-  resize: vertical; /* Allows the textarea to be resized vertically */
+  box-sizing: border-box; 
+  resize: vertical; 
 }
 
 .comment-btn, .like-btn, .save-btn {
@@ -127,7 +127,6 @@ body {
   background-color: #0097a7;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 1200px) {
   .container {
     padding: 15px;
@@ -218,23 +217,21 @@ body {
   }
 }
 
-/* Added styles to fix comment box overflow */
 .comment-section {
   margin-top: 20px;
-  overflow: hidden; /* Prevents the comment box from overflowing */
+  overflow: hidden; 
 }
 
 .comment-section textarea {
-  width: 100%; /* Ensures textarea takes full width of its container */
-  padding: 10px; /* Adjust padding */
+  width: 100%;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  box-sizing: border-box; /* Includes padding in width */
-  resize: vertical; /* Allows resizing vertically */
+  box-sizing: border-box; 
+  resize: vertical; 
 }
 
-/* Responsive Styles for the comment box */
 @media screen and (max-width: 1200px) {
   .comment-section textarea {
     padding: 8px;

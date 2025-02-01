@@ -178,24 +178,25 @@ textarea:focus {
 .delete-btn:hover {
     background-color: #740808;
 }
+
 .back-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px; /* Set the size of the button */
+    width: 40px; 
     height: 40px; 
-    background-color: #00bcd4; /* Button background */
-    color: white; /* Icon color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 50%; /* Make it a circle */
-    font-size: 20px; /* Icon size */
-    position: fixed; /* Stick to a corner */
-    top: 20px; /* Position it from the top */
-    left: 20px; /* Position it from the left */
-    z-index: 1000; /* Make sure it's above other elements */
+    background-color: #00bcd4; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 50%; 
+    font-size: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
 .back-btn:hover {
-    background-color: #0097a7; /* Change color on hover */
+    background-color: #0097a7;
 }

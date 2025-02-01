@@ -1,5 +1,4 @@
-import { generateContent } from './ai.js'; // Ensure generateContent is imported properly
-
+import { generateContent } from './ai.js'; 
 const blogContent = document.getElementById('blog-content');
 const saveButton = document.querySelector('.save-btn');
 const deleteButton = document.querySelector('.upload-btn');
@@ -12,23 +11,20 @@ saveButton.addEventListener('click', () => {
     const content = blogContent.value.trim();
     if (content) {
         const blogs = getBlogs();
-        const newBlog = { id: Date.now(), content, titles: [] }; // Added titles array to each blog
+        const newBlog = { id: Date.now(), content, titles: [] }; 
         blogs.push(newBlog);
         saveBlogs(blogs);
         renderBlogs();
         
-        // Send the blog content to generate titles
         const prompt = `Please provide me with three short titles for the following blog content: ${content}`;
         
         generateContent(prompt).then(responseText => {
-            // Assuming the response is a list of titles separated by new lines
             const titles = responseText.split('\n').map(title => title.trim()).filter(title => title.length > 0);
             
-            // Save the generated titles to the blog
             if (titles.length >= 3) {
-                newBlog.titles = titles.slice(0, 3);  // Save only the first 3 titles
+                newBlog.titles = titles.slice(0, 3);  
                 saveBlogs(blogs);
-                renderBlogs();  // Re-render the blogs to include the new titles
+                renderBlogs();  
             } else {
                 console.error("Error: Could not generate three titles.");
             }
