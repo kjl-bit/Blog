@@ -1,4 +1,32 @@
-import { generateContent } from './ai.js'; 
+const API_KEY = 'AIzaSyAMw2bUl5rrlaxjfV8epWa4L3W-keEjwKY';
+const MODEL_NAME = 'gemini-1.5-flash';
+
+const generateContent = async (prompt) => {
+  try {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        contents: [{
+          parts: [{
+            text: prompt
+          }]
+        }]
+      })
+    });
+    
+    const data = await response.json();
+    return data.candidates[0].content.parts[0].text;
+  } catch (error) {
+    console.error("Error generating content:", error);
+    return null;
+  }
+};
+
+
+
 const blogContent = document.getElementById('blog-content');
 const saveButton = document.querySelector('.save-btn');
 const deleteButton = document.querySelector('.upload-btn');
